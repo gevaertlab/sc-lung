@@ -34,9 +34,11 @@
 
 3. Train nuclear segmentation and classification model on histology images<br>
     `python extract_patches.py`<br>
-    `python hover_net/run_train.py`
+    `python hover_net/run_train.py`<br>
 
-4. Extract nuclear morphology, textural, and topological features<br>
+4. Run inference using pre-trained model: https://github.com/gevaertlab/NucSegAI 
+
+5. Extract nuclear morphology, textural, and topological features<br>
     `python sc_MTOP/extract_features.py`
 
 
