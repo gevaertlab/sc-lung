@@ -1,1 +1,4 @@
 sample_data/
+**/__pycache__/
+**/*.pyc
+**/.vscode/
