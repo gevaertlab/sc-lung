@@ -12,8 +12,8 @@
 - spatial_util.py: utility functions for spatial statistical analyses, visualization and group comparisons
 - deseq_rank_genes.R: perform differential gene expression analysis
 - geneset_rna.py: gene set enrichment analysis
-- hover_net: training and evaluating scripts for nuclear segmentation and classification using histology images. The codes were adapted from Graham et al. (https://github.com/vqdang/hover_net), with my own customizations 
-- sc_MTOP: codes for extracting single-cell morphological, textural and topological features from histology images. The codes were adapted from Zhao et al. Nat Comm (2023), with my own customizations for incorporating new features and additional cell types
+- hover_net: training and evaluating scripts for nuclear segmentation and classification using histology images. The codes were adapted from Graham et al. (https://github.com/vqdang/hover_net), with customizations for incorporating weighted loss function. 
+- sc_MTOP: codes for extracting single-cell morphological, textural and topological features from histology images. The codes were adapted from Zhao et al. Nat Comm (2023), with customizations for incorporating new features and additional cell types
 
 ## Environment setup 
 
@@ -36,7 +36,7 @@
     `python extract_patches.py`<br>
     `python hover_net/run_train.py`<br>
 
-4. Run inference using pre-trained model: https://github.com/gevaertlab/NucSegAI 
+4. Run inference using pre-trained NucSegAI model: https://github.com/gevaertlab/NucSegAI 
 
 5. Extract nuclear morphology, textural, and topological features<br>
     `python sc_MTOP/extract_features.py`
